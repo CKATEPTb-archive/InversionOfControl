@@ -26,8 +26,6 @@ repositories {
 }
 
 dependencies {
-    implementation("com.google.guava:guava:31.1-jre")
-
     compileOnly("org.projectlombok:lombok:1.18.22")
     annotationProcessor("org.projectlombok:lombok:1.18.22")
 }
@@ -37,6 +35,7 @@ tasks {
         relocate("com", "${internal}.com")
         relocate("javax", "${internal}.javax")
         relocate("org", "${internal}.org")
+        excludes.remove("module-info.class")
     }
     register<ProGuardTask>("shrink") {
         dependsOn(shadowJar)
@@ -47,19 +46,21 @@ tasks {
 
         libraryjars("${System.getProperty("java.home")}/jmods")
 
+        keep("class module-info")
         keep(mapOf("includedescriptorclasses" to true), "public class !${internal}.** { *; }")
-        keepattributes("RuntimeVisibleAnnotations,RuntimeVisibleParameterAnnotations,RuntimeVisibleTypeAnnotations")
+        keepattributes("Module*,RuntimeVisibleAnnotations,RuntimeVisibleParameterAnnotations,RuntimeVisibleTypeAnnotations")
 
         dontobfuscate()
         dontoptimize()
     }
     build {
-        dependsOn("shrink")
+//        dependsOn("shrink")
     }
     publish {
         dependsOn("shrink")
     }
     withType<JavaCompile> {
+        modularity.inferModulePath.set(true)
         options.encoding = "UTF-8"
     }
 }
@@ -74,7 +75,8 @@ publishing {
     publications {
         publications.create<MavenPublication>("maven") {
             artifacts {
-                artifact(tasks.getByName("shrink").outputs.files.singleFile)
+                from(components["java"])
+//                artifact(tasks.getByName("shrink").outputs.files.singleFile)
             }
         }
     }

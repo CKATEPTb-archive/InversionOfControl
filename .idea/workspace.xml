@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bd2c4abc-85b2-46aa-b72d-1b53b23e2c13" name="Changes" comment="add module-info.java">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Absent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/AbstractIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/CharMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/ExtraObjectsMethodsForWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Joiner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/NullnessCasts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Objects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Optional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Preconditions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Predicate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Predicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Present.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Splitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/StandardSystemProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/base/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/AbstractIndexedListIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/AbstractIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/AbstractMapEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/BiMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/CollectPreconditions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/CollectSpliterators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Collections2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/FluentIterable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Hashing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableAsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableBiMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableBiMapFauxverideShim.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableCollection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableEnumMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableEnumSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableMapEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableMapEntrySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableMapKeySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableMapValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ImmutableSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/IndexedImmutableSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Iterables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Iterators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/JdkBackedImmutableMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/JdkBackedImmutableSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Lists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Maps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Multiset.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Multisets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/NullnessCasts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/ObjectArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Platform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/RegularImmutableAsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/RegularImmutableList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/RegularImmutableMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/RegularImmutableSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/Sets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/SingletonImmutableBiMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/SingletonImmutableList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/SingletonImmutableSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/UnmodifiableIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/collect/UnmodifiableListIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/concurrent/ListenableFuture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/concurrent/ListenableScheduledFuture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/concurrent/ListeningExecutorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/concurrent/ListeningScheduledExecutorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/math/IntMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/math/MathPreconditions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/guava/reflect/ClassPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/IoC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ckateptb/commons/ioc/IoC.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="inversion-of-control" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="module-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/c388a68bc2b17a314dfa7c769d858ada0fc32dcf/guava-31.1-jre-sources.jar!/com/google/common/base/Strings.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="28DLWLY5S2ZCH9OepcUcHvUt9V5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ckate/IdeaProjects/commons/inversion-of-control/src/main/java/ru/ckateptb/commons/ioc&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ckate\IdeaProjects\commons\inversion-of-control\src\main\java\ru\ckateptb\commons\ioc" />
+      <recent name="C:\Users\ckate\IdeaProjects\commons\inversion-of-control\src\main\java\ru\ckateptb\commons\ioc\annotations" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ru.ckateptb.commons.ioc.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.inversion-of-control [publishToMavenLocal]">
+    <configuration name="inversion-of-control [buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="inversion-of-control [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--info" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="inversion-of-control [classes]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="classes" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="inversion-of-control [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="inversion-of-control [publishToMavenLocal]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.inversion-of-control [publishToMavenLocal]" />
+        <item itemvalue="Gradle.inversion-of-control [build]" />
+        <item itemvalue="Gradle.inversion-of-control [clean]" />
+        <item itemvalue="Gradle.inversion-of-control [buildDependents]" />
+        <item itemvalue="Gradle.inversion-of-control [classes]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bd2c4abc-85b2-46aa-b72d-1b53b23e2c13" name="Changes" comment="" />
+      <created>1650746242379</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650746242379</updated>
+      <workItem from="1650746245947" duration="11949000" />
+      <workItem from="1650759889204" duration="6602000" />
+      <workItem from="1650766829034" duration="691000" />
+      <workItem from="1650769933461" duration="103000" />
+      <workItem from="1650770488359" duration="592000" />
+      <workItem from="1650771282163" duration="5956000" />
+    </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1650758420237</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650758420237</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update build.gradle.kts">
+      <created>1650763740863</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650763740863</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update build.gradle.kts">
+      <created>1650766397407</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650766397407</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add module-info.java">
+      <created>1650770031106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650770031106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <MESSAGE value="update build.gradle.kts" />
+    <MESSAGE value="add module-info.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="add module-info.java" />
+  </component>
+</project>

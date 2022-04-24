@@ -1,6 +1,5 @@
 package ru.ckateptb.commons.ioc;
 
-import com.google.common.reflect.ClassPath;
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -9,6 +8,7 @@ import ru.ckateptb.commons.ioc.core.*;
 import ru.ckateptb.commons.ioc.exceptions.IoCBeanNotFound;
 import ru.ckateptb.commons.ioc.exceptions.IoCCircularDepException;
 import ru.ckateptb.commons.ioc.exceptions.IoCException;
+import ru.ckateptb.commons.ioc.guava.reflect.ClassPath;
 import ru.ckateptb.commons.ioc.utils.FinderUtils;
 
 import java.io.IOException;
