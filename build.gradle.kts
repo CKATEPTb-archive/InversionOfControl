@@ -34,21 +34,21 @@ dependencies {
 
 tasks {
     shadowJar {
-        minimize()
         relocate("com", "${internal}.com")
         relocate("javax", "${internal}.javax")
         relocate("org", "${internal}.org")
     }
     register<ProGuardTask>("shrink") {
+        dependsOn(shadowJar)
         injars(shadowJar.get().outputs.files)
         outjars("${project.buildDir}/libs/${project.name}-${project.version}.jar")
 
         ignorewarnings()
 
-        libraryjars("${System.getProperty("java.home")}/lib/rt.jar")
-        libraryjars("${System.getProperty("java.home")}/lib/jce.jar")
+        libraryjars("${System.getProperty("java.home")}/jmods")
 
-        keep("public class !${internal}.** { *; }")
+        keep(mapOf("includedescriptorclasses" to true), "public class !${internal}.** { *; }")
+        keepattributes("RuntimeVisibleAnnotations,RuntimeVisibleParameterAnnotations,RuntimeVisibleTypeAnnotations")
 
         dontobfuscate()
         dontoptimize()
