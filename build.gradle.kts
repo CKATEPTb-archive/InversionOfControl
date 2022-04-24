@@ -18,12 +18,16 @@ plugins {
 group = "ru.ckateptb.commons"
 version = "1.0-SNAPSHOT"
 
+val rootPackage = "${project.group}.ioc"
+val internal = "${rootPackage}.internal"
+
 repositories {
     mavenCentral()
 }
 
 dependencies {
     implementation("com.google.guava:guava:31.1-jre")
+
     compileOnly("org.projectlombok:lombok:1.18.22")
     annotationProcessor("org.projectlombok:lombok:1.18.22")
 }
@@ -31,10 +35,23 @@ dependencies {
 tasks {
     shadowJar {
         minimize()
-        archiveFileName.set("${project.name}-${project.version}-full.jar")
+        relocate("com", "${internal}.com")
+        relocate("javax", "${internal}.javax")
+        relocate("org", "${internal}.org")
     }
     register<ProGuardTask>("shrink") {
+        injars(shadowJar.get().outputs.files)
+        outjars("${project.buildDir}/libs/${project.name}-${project.version}.jar")
 
+        ignorewarnings()
+
+        libraryjars("${System.getProperty("java.home")}/lib/rt.jar")
+        libraryjars("${System.getProperty("java.home")}/lib/jce.jar")
+
+        keep("public class !${internal}.** { *; }")
+
+        dontobfuscate()
+        dontoptimize()
     }
     build {
         dependsOn("shrink")
@@ -45,41 +62,18 @@ tasks {
     withType<JavaCompile> {
         options.encoding = "UTF-8"
     }
-    withType<ProGuardTask> {
-        dependsOn(shadowJar)
-        injars(shadowJar)
-        dontobfuscate()
-        dontoptimize()
-        ignorewarnings()
-        keepattributes("RuntimeVisibleAnnotations,RuntimeVisibleParameterAnnotations,RuntimeVisibleTypeAnnotations")
-        keep("class ${project.group}.** { *; }")
-        libraryjars("${System.getProperty("java.home")}/lib/rt.jar")
-        libraryjars("${System.getProperty("java.home")}/lib/jce.jar")
-        libraryjars(sourceSets.main.get().compileClasspath)
-        outjars("${project.buildDir}/libs/${project.name}-${project.version}-shrink.jar")
-    }
-    named<Copy>("processResources") {
-        from("LICENSE") {
-            rename { "${project.name.toUpperCase()}_${it}" }
-        }
-    }
 }
 
 java {
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(17))
     }
-    withSourcesJar()
 }
 
 publishing {
     publications {
         publications.create<MavenPublication>("maven") {
             artifacts {
-                artifact(tasks.shadowJar) {
-                    classifier = "full"
-                }
-                artifact(tasks["sourcesJar"])
                 artifact(tasks.getByName("shrink").outputs.files.singleFile)
             }
         }
